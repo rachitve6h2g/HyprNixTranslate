@@ -1,0 +1,17 @@
+[[open.prepend_rules]]
+name = "*.pdf"
+use = "zathura-open"
+
+[opener]
+[[opener.edit]]
+block = true
+run = "vim  \"$@\""
+
+[[opener.play]]
+for = "unix"
+orphan = true
+run = "vlc \"$@\""
+
+[[opener.zathura-open]]
+orphan = true
+run = "zathura \"$@\""

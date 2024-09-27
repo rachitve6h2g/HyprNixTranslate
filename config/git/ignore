@@ -1,0 +1,7 @@
+.ssh/id_*
+*.pem
+.gnupg/
+*.gpg
+*.asc
+*.gpg~
+*.asc~

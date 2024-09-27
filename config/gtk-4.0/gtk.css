@@ -1,0 +1,5 @@
+/**
+ * GTK 4 reads the theme configured by gtk-theme-name, but ignores it.
+ * It does however respect user CSS, so import the theme from here.
+**/
+@import url("file:///nix/store/n92wplpwpmv4mzkplvwnng5w6h5nlqcr-gruvbox-gtk-theme-0-unstable-2024-09-12/share/themes/Gruvbox-Dark/gtk-4.0/gtk.css");

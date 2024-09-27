@@ -1,0 +1,219 @@
+[
+  {
+    "backlight": {
+      "format": "{icon}{percent}%",
+      "format-icons": [
+        "<span color='#a9b665'> </span>",
+        "<span color='#7daea3'> </span>",
+        "<span color='#ebdbb2'> </span>",
+        "<span color='#bd6f3e'> </span>",
+        "<span color='#d3869b'> </span>",
+        "<span color='#d8a657'> </span>",
+        "<span color='#e78a4e'> </span>",
+        "<span color='#ea6962'> </span>"
+      ],
+      "tooltip": false
+    },
+    "battery": {
+      "format": "{icon}{capacity}%",
+      "format-alt": "{icon} {time}",
+      "format-charging": " {capacity}%",
+      "format-full": "{icon} <span foreground='#d8a657'> </span>",
+      "format-icons": [
+        "<span foreground='#fbf1c7'> </span>",
+        "<span foreground='#ea6962'> </span>",
+        "<span foreground='#d8a657'> </span>",
+        "<span foreground='#a9b665'> </span>",
+        "<span foreground='#a9b665'> </span>"
+      ],
+      "format-plugged": " {capacity}%",
+      "format-time": "{H}h {M}min",
+      "full-at": 100,
+      "interval": 1,
+      "states": {
+        "critical": 25,
+        "good": 85,
+        "warning": 30
+      },
+      "tooltip": true
+    },
+    "clock": {
+      "align": 0,
+      "format": "<span foreground='#ebdbb2'> </span>{:%I:%M%p}",
+      "format-alt": "<span foreground='#ebdbb2'> </span>{:%a %b %d, %G}",
+      "interval": 10,
+      "rotate": 0,
+      "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+      "format": " {usage}%{icon}",
+      "format-icons": [
+        "<span color='#69ff94'>▁</span>",
+        "<span color='#2aa9ff'>▂</span>",
+        "<span color='#f8f8f2'>▃</span>",
+        "<span color='#f8f8f2'>▄</span>",
+        "<span color='#ffffa5'>▅</span>",
+        "<span color='#ffffa5'>▆</span>",
+        "<span color='#ff9977'>▇</span>",
+        "<span color='#dd532e'>█</span>"
+      ],
+      "interval": 10,
+      "on-click": "kitty -e btop",
+      "states": {
+        "critical": 50,
+        "good": 20,
+        "warning": 40
+      }
+    },
+    "custom/notifications": {
+      "escape": true,
+      "exec": "swaync-client -swb",
+      "exec-if": "which swaync-client",
+      "format": "{icon}",
+      "format-icons": {
+        "dnd-inhibited-none": " ",
+        "dnd-inhibited-notification": " <span foreground='#ea6962'><sup></sup></span>",
+        "dnd-none": " ",
+        "dnd-notification": " <span foreground='#ea6962'><sup></sup></span>",
+        "inhibited-none": " ",
+        "inhibited-notification": " <span foreground='#ea6962'><sup></sup></span>",
+        "none": "<span foreground='#d8a657'> </span>",
+        "notification": "<span foreground='#ea6962'> <sup></sup></span>"
+      },
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "return-type": "json",
+      "tooltip": false
+    },
+    "custom/power": {
+      "format": " ",
+      "on-click": "wlogout",
+      "tooltip": false
+    },
+    "group/hardware": {
+      "drawer": {
+        "children-class": "not-battery",
+        "transition-duration": 500,
+        "transition-left-to-right": false
+      },
+      "modules": [
+        "battery",
+        "cpu",
+        "memory"
+      ],
+      "orientation": "inherit"
+    },
+    "height": 59,
+    "hyprland/window": {
+      "format": "{title}",
+      "icon": true,
+      "icon-size": 20,
+      "max-length": 1
+    },
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "active": " ",
+        "default": " ",
+        "empty": " "
+      },
+      "on-click": "activate",
+      "persistent-workspaces": {
+        "1": "[]",
+        "2": "[]",
+        "3": "[]",
+        "4": "[]",
+        "5": "[]"
+      },
+      "window-rewrite": "{}"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+      }
+    },
+    "keyboard-state": {
+      "capslock": true,
+      "format": {
+        "capslock": "C{icon}",
+        "numlock": "N{icon}"
+      },
+      "format-icons": {
+        "locked": "<span foreground='#89b482'> </span>",
+        "unlocked": "<span foreground='#d3869b'> </span>"
+      },
+      "numlock": true
+    },
+    "layer": "top",
+    "memory": {
+      "format": "<span foreground='#bd6f3e'> </span>{used:0.1f}G",
+      "interval": 10
+    },
+    "modules-center": [
+      "tray",
+      "hyprland/workspaces",
+      "hyprland/window"
+    ],
+    "modules-left": [
+      "custom/notifications",
+      "clock",
+      "idle_inhibitor",
+      "keyboard-state"
+    ],
+    "modules-right": [
+      "group/hardware",
+      "power-profiles-daemon",
+      "backlight",
+      "network",
+      "wireplumber",
+      "custom/power"
+    ],
+    "network": {
+      "format-disabled": "<span foreground='#ea6962'> </span>",
+      "format-disconnected": "<span foreground='#ea6962'>󰤭 </span>",
+      "format-ethernet": " {ipaddr}/{cidr}",
+      "format-linked": "󰈁{ifname} (No IP)",
+      "format-wifi": "<span foreground='#a9b665'> </span><span foreground='#ddc7a1' font_style='italic' font_weight='heavy'>{essid}</span>({signalStrength}%)",
+      "interval": 3,
+      "on-click": "kitty -e nmtui",
+      "tooltip-format-ethernet": "<span foreground='#7daea3'> </span>{ifname} via {gwaddr}",
+      "tooltip-format-wifi": " {bandwidthUpBits} |  {bandwidthDownBits}"
+    },
+    "position": "bottom",
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "format-icons": {
+        "balanced": " ",
+        "default": " ",
+        "performance": " ",
+        "power-saver": " "
+      },
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}"
+    },
+    "sway/modes": {
+      "format": "{}"
+    },
+    "tray": {
+      "icon-size": 16,
+      "spacing": 10
+    },
+    "wireplumber": {
+      "format": "{icon}{volume}%",
+      "format-icons": {
+        "default": [
+          "<span foreground='#d8a657'></span>",
+          "<span foreground='#a9b665'> </span>",
+          "<span foreground='#d3869b'> </span>"
+        ],
+        "headphone": " "
+      },
+      "format-muted": "<span foreground='#ea6962'> </span>",
+      "on-click": "pwvucontrol",
+      "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "tooltip": false
+    }
+  }
+]

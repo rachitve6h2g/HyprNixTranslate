@@ -1,0 +1,4 @@
+--smart-case
+--colors=match:bg:black
+--colors=match:fg:magenta
+--colors=line:fg:green

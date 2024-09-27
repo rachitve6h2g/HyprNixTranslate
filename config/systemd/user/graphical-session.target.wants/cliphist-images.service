@@ -1,0 +1,11 @@
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+ExecStart=/nix/store/189v8mq211l0csxn5iispfrgncv2m714-wl-clipboard-2.2.1/bin/wl-paste --type image --watch /nix/store/aqfv1b2hv2zjw4jnwgkks8vgr729d8y4-cliphist-0.5.0/bin/cliphist -max-dedupe-search 10 -max-items 500 store
+Restart=on-failure
+Type=simple
+
+[Unit]
+Description=Clipboard management daemon - images
+PartOf=graphical-session.target

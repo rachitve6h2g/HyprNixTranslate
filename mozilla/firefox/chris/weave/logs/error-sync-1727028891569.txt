@@ -1,0 +1,15 @@
+1727028883475	Sync.LogManager	DEBUG	Flushing file log
+1727028883476	Sync.LogManager	DEBUG	Log cleanup threshold time: 1726164883476
+1727028883476	Sync.LogManager	DEBUG	Done deleting files.
+1727028891562	Sync.Service	DEBUG	User-Agent: Firefox/130.0 (Linux x86_64) FxSync/1.132.0.20240829075237.desktop
+1727028891562	Sync.Service	INFO	Starting sync at 2024-09-22 23:44:51 in browser session WGGScWPyvgNI
+1727028891562	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1727028891564	Sync.Status	INFO	Resetting Status.
+1727028891564	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1727028891565	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1727028891567	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/213784407/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1727028891567	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1727028891567	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1727028891567	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1727028891568	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1727028891569	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

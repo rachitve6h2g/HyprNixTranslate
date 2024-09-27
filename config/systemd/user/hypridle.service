@@ -1,0 +1,14 @@
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+ExecStart=/nix/store/0bxazkddh9vlf708x3grkxvd8pz1x0li-hypridle-0.1.2/bin/hypridle
+Restart=always
+RestartSec=10
+
+[Unit]
+After=graphical-session-pre.target
+ConditionEnvironment=WAYLAND_DISPLAY
+Description=hypridle
+PartOf=graphical-session.target
+X-Restart-Triggers=/nix/store/89y1yhw3j7hr8k4qwyynj6ij7x0my55q-hm_hyprhypridle.conf

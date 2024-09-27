@@ -1,0 +1,136 @@
+*{
+  font-family: 'Iosevka Nerd Font Propo';
+  font-size: 12pt;
+  min-height: 0;
+  border-radius: 0;
+}
+
+tooltip {
+  background: #202020;
+  border-radius: 15px;
+  border: 2px solid #89b482;
+}
+
+#window {
+  border-radius: 20px;
+  color: #ddc7a1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+window#waybar {
+  background-color: transparent;
+  color: #ddc7a1;
+  border-radius: 20px;
+}
+
+/*#workspaces {
+  padding: 1px 1px 1px 1px;
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}*/
+
+
+#workspaces button {
+  padding: 1px;
+  background:none;
+  border: none;
+}
+
+#workspaces button.visible {
+  color: #e78a4e;
+}
+
+#workspaces button.empty {
+  color: #ddc7a1;
+}
+
+#workspaces button.active {
+  color: #e78a4e;
+}
+
+#workspaces button.urgent {
+  color: #ea6962;
+}
+
+#workspaces button:hover{
+  border-radius: 50px;
+  background: #bdae93;
+  color: #fbf1c7;
+}
+
+.modules-left {
+  background: linear-gradient(45deg, #202020, #202020) padding-box, linear-gradient(45deg, #7daea3, #d3869b) border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  color: #ddc7a1;
+  margin: 10px 0 10px 5px;
+  padding: 5px;
+}
+
+.modules-center {
+  background: linear-gradient(180deg, #202020, #202020) padding-box, linear-gradient(180deg, #7daea3, #d3869b) border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  color: inherit;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+}
+
+.modules-right {
+  background: linear-gradient(135deg, #202020, #202020) padding-box, linear-gradient(135deg, #d3869b, #7daea3) border-box;
+  border: 2px solid transparent; 
+  border-radius: 25px;
+  color: inherit;
+  margin: 10px 5px 10px 0;
+  padding: 5px;
+}
+
+#custom-notifications,
+#clock,
+#idle_inhibitor,
+#keyboard-state,
+#battery,
+#power-profiles-daemon,
+#backlight,
+#network,
+#wireplumber,
+#cpu,
+#memory,
+#custom-power {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#power-profiles-daemon.power-saver {
+  color: #a9b665;
+}
+#power-profiles.balanced {
+  color: #d8a657;
+}
+#power-profiles-daemon.performance {
+  color: #ea6962;
+}
+
+#idle_inhibitor.activated {
+  color: #ea6962;
+}
+#idle_inhibitor.deactivated {
+  color: #fbf1c7;
+}
+
+#custom-notifications {
+  font-family: "Iosevka Nerd Font Propo";
+}
+#custom-power {
+  color: #ea6962;
+  border-radius: 25px;
+  background: #5a524c;
+  padding: 1px;
+}
+
+#battery.Charging {
+  color: #89b482;
+}

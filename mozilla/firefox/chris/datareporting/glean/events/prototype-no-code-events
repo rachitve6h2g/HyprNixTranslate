@@ -1,0 +1,4 @@
+{"timestamp":12652809,"category":"browser.usage","name":"interaction","extra":{"source":"nav-bar","flow_id":"{dd849194-05ca-429b-aee1-8f5344cdd59a}","glean_timestamp":"1727418067599","widget_id":"urlbar-input"},"execution_counter":44}
+{"timestamp":12662660,"category":"browser.usage","name":"interaction","extra":{"source":"nav-bar","glean_timestamp":"1727418077450","widget_id":"urlbar-input","flow_id":"{dd849194-05ca-429b-aee1-8f5344cdd59a}"},"execution_counter":44}
+{"timestamp":12886231,"category":"browser.usage","name":"interaction","extra":{"flow_id":"{dd849194-05ca-429b-aee1-8f5344cdd59a}","source":"tabs-bar","widget_id":"tab-close-button","glean_timestamp":"1727418301021"},"execution_counter":44}
+{"timestamp":13067491,"category":"browser.usage","name":"interaction","extra":{"source":"tabs-bar","glean_timestamp":"1727418482281","flow_id":"{dd849194-05ca-429b-aee1-8f5344cdd59a}","widget_id":"new-tab-button"},"execution_counter":44}

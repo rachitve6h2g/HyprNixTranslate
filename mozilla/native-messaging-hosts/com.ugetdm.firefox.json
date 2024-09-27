@@ -1,0 +1,9 @@
+{
+    "name": "com.ugetdm.firefox",
+    "description": "Integrate uGet with Mozilla Firefox",
+    "path": "/nix/store/bvld9rpvrwx3788766jnk3gkrlkc9g2p-uget-integrator-1.0.0/bin/uget-integrator",
+    "type": "stdio",
+    "allowed_extensions": [
+        "uget-integration@slgobinath"
+    ]
+}

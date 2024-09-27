@@ -1,0 +1,11 @@
+[Service]
+Environment=GNUPGHOME=/home/chris/.gnupg
+ExecReload=/nix/store/3l2rsi089jdwk17kmcpwwfbig8437lm9-gnupg-2.4.5/bin/gpgconf --reload gpg-agent
+ExecStart=/nix/store/3l2rsi089jdwk17kmcpwwfbig8437lm9-gnupg-2.4.5/bin/gpg-agent --supervised
+
+[Unit]
+After=gpg-agent.socket
+Description=GnuPG cryptographic agent and passphrase cache
+Documentation=man:gpg-agent(1)
+RefuseManualStart=true
+Requires=gpg-agent.socket

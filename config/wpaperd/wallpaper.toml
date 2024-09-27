@@ -1,0 +1,4 @@
+[default]
+apply-shadow = true
+path = "/nix/store/8pr7jzz6k0c1rinsxdg4z2m24xhiqnvk-berries.jpg"
+sorting = "ascending"

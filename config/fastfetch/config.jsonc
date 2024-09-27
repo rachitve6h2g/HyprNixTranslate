@@ -1,0 +1,75 @@
+{
+  "display": {
+    "constants": [
+      "──────────────────────────────"
+    ],
+    "separator": "->"
+  },
+  "logo": {
+    "height": 15,
+    "source": "/nix/store/k3rjvji6ks8p0mi74970yyw48mflw8xl-nixos_fastfetch.png",
+    "type": "kitty",
+    "width": 30
+  },
+  "modules": [
+    {
+      "key": " ",
+      "keyColor": "yellow",
+      "type": "os"
+    },
+    {
+      "key": " ",
+      "keyColor": "red",
+      "type": "kernel"
+    },
+    "host",
+    "bios",
+    "board",
+    "chassis",
+    "uptime",
+    "processes",
+    "packages",
+    {
+      "key": " ",
+      "keyColor": "blue",
+      "type": "shell"
+    },
+    "display",
+    {
+      "key": " ",
+      "keyColor": "violet",
+      "type": "wm"
+    },
+    {
+      "key": " ",
+      "keyColor": "purple",
+      "type": "theme"
+    },
+    "icons",
+    {
+      "key": " ",
+      "keyColor": "lavender",
+      "theme": "font"
+    },
+    "cursor",
+    {
+      "key": " ",
+      "keyColor": "yellow",
+      "type": "terminal"
+    },
+    {
+      "key": " ",
+      "keyColor": "green",
+      "type": "cpu"
+    },
+    "gpu",
+    "disk",
+    "wifi",
+    "locale",
+    "vulkan",
+    "opengl",
+    "opencl",
+    "users",
+    "sound"
+  ]
+}

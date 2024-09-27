@@ -1,0 +1,14 @@
+[Install]
+WantedBy=hyprland-session.target
+
+[Service]
+ExecReload=/nix/store/0kg70swgpg45ipcz3pr2siidq9fn6d77-coreutils-9.5/bin/kill -SIGUSR2 $MAINPID
+ExecStart=/nix/store/k83jp5hhszwl3lmdvvmaz3r8dgxr6869-waybar-0.11.0/bin/waybar
+KillMode=mixed
+Restart=on-failure
+
+[Unit]
+After=graphical-session-pre.target
+Description=Highly customizable Wayland bar for Sway and Wlroots based compositors.
+Documentation=https://github.com/Alexays/Waybar/wiki
+PartOf=graphical-session.target

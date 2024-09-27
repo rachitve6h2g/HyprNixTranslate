@@ -1,0 +1,5 @@
+{"action":"systemctl poweroff","circular":true,"keybind":"s","label":"shutdown","text":"Shutdown"}
+{"action":"systemctl suspend","keybind":"u","label":"suspend","text":"Sleep"}
+{"action":"loginctl lock-session","keybind":"l","label":"lock","text":"Lock the screen"}
+{"action":"systemctl reboot","keybind":"r","label":"reboot","text":"Reboot"}
+{"action":"loginctl terminate-user","keybind":"e","label":"logout","text":"Logout"}

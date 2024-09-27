@@ -1,0 +1,9 @@
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+ExecStart=/nix/store/awkwv2nyhanmk6h57z84r5kdc4b37lrr-wlsunset-0.4.0/bin/wlsunset -S 06:00 -T 6500 -g 1.000000 -s 18:00 -t 4000
+
+[Unit]
+Description=Day/night gamma adjustments for Wayland compositors.
+PartOf=graphical-session.target

@@ -1,0 +1,16 @@
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+Environment=PATH=/etc/profiles/per-user/chris/bin
+ExecStart=/nix/store/p6a8dbkwgr17yx60bl5cnn696289vcvk-kdeconnect-kde-23.08.5/bin/kdeconnect-indicator
+Restart=on-abort
+
+[Unit]
+After=graphical-session-pre.target
+After=polybar.service
+After=taffybar.service
+After=stalonetray.service
+Description=kdeconnect-indicator
+PartOf=graphical-session.target
+Requires=tray.target

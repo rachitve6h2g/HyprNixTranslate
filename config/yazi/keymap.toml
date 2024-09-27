@@ -1,0 +1,14 @@
+[[manager.prepend_keymap]]
+desc = "Mount phone device"
+on = ["b", "m"]
+run = "shell --interactive \"aft-mtp-mount ~/myDevice/\""
+
+[[manager.prepend_keymap]]
+desc = "Unmount the phone"
+on = ["b", "u"]
+run = "shell --interactive \"kitty -e sudo umount -R ~/myDevice\""
+
+[[manager.prepend_keymap]]
+desc = "Go into mounted USB media"
+on = ["g", "m"]
+run = "cd /run/media"

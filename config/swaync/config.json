@@ -1,0 +1,50 @@
+{
+  "buttons-grid": {
+    "actions": [
+      {
+        "active": true,
+        "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
+        "label": "Wifi",
+        "type": "toggle",
+        "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true | false'"
+      }
+    ]
+  },
+  "control-center-width": 400,
+  "hide-on-clear": true,
+  "layer": "top",
+  "notification-2fa-action": false,
+  "notification-window-width": 400,
+  "positionY": "bottom",
+  "timeout": -1,
+  "transition-time": 500,
+  "widget-config": {
+    "backlight": {
+      "label": " "
+    },
+    "dnd": {
+      "text": "Do not disturb"
+    },
+    "inhibitors": {
+      "button-text": "Clear All",
+      "clear-all-button": true,
+      "text": "Inhibitors"
+    },
+    "title": {
+      "button-text": "Clear All",
+      "clear-all-button": true,
+      "text": "Notfications"
+    },
+    "volume": {
+      "label": " "
+    }
+  },
+  "widgets": [
+    "inhibitors",
+    "title",
+    "dnd",
+    "notifications",
+    "volume",
+    "backlight"
+  ]
+}

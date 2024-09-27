@@ -1,0 +1,12 @@
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+Environment=PATH=/etc/profiles/per-user/chris/bin
+ExecStart=/nix/store/p6a8dbkwgr17yx60bl5cnn696289vcvk-kdeconnect-kde-23.08.5/libexec/kdeconnectd
+Restart=on-abort
+
+[Unit]
+After=graphical-session-pre.target
+Description=Adds communication between your desktop and your smartphone
+PartOf=graphical-session.target

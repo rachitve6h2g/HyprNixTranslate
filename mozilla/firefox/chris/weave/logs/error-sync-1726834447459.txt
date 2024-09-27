@@ -1,0 +1,32 @@
+1726834132736	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1726834132739	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1726834132740	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1726834445423	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1726834445423	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1726834445425	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1726834445428	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1726834445431	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1726834445433	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1726834445433	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1726834445434	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1726834447445	Sync.Service	DEBUG	User-Agent: Firefox/130.0 (Linux x86_64) FxSync/1.132.0.20240829075237.desktop
+1726834447445	Sync.Service	INFO	Starting sync at 2024-09-20 17:44:07 in browser session qtUJMmmt0aL4
+1726834447445	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1726834447451	Sync.Status	INFO	Resetting Status.
+1726834447451	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1726834447452	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1726834447452	FirefoxAccounts	DEBUG	getOAuthToken enter
+1726834447452	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1726834447452	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1726834447452	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1726834447454	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1726834447455	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1726834447455	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1726834447455	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 478\"  data: no]"}
+1726834447455	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/213784407/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1726834447456	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1726834447456	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1726834447456	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1726834447456	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1726834447459	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1726834447459	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent

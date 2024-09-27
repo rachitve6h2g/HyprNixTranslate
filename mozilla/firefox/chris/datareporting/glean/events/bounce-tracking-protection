@@ -1,0 +1,3 @@
+{"timestamp":4237476,"category":"bounce.tracking.protection","name":"purge_action","extra":{"site_host":"medium.com","is_dry_run":"true","bounce_time":"1727367738","success":"true","glean_timestamp":"1727373622337"},"execution_counter":1}
+{"timestamp":4237476,"category":"bounce.tracking.protection","name":"purge_action","extra":{"bounce_time":"1727244663","glean_timestamp":"1727373622337","is_dry_run":"true","site_host":"markdownguide.org","success":"true"},"execution_counter":1}
+{"timestamp":62243,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1727405475411","glean.startup.date":"2024-09-27T08:21+05:30"},"execution_counter":2}
